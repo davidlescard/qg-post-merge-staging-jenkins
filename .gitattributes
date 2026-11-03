@@ -1,0 +1,15 @@
+# Normalize text files to LF in the repository
+* text=auto
+
+# Keep project configuration and package-manager files on LF
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.ts text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.cjs text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.html text eol=lf
+*.sh text eol=lf

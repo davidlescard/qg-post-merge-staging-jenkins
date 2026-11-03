@@ -1,0 +1,25 @@
+{
+  "name": "ai-ci-reference-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright end-to-end tests app validation",
+  "type": "module",
+  "author": "David Lescard",
+  "scripts": {
+    "compile": "tsc --noEmit",
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:api": "playwright test --project=api",
+    "test:post-deploy": "playwright test --grep @post-deploy",
+    "kill:3000": "pnpm dlx kill-port 3000"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "find-up-simple": "^1.0.1"
+  }
+}

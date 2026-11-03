@@ -1,0 +1,4 @@
+{
+  "import": "tsx",
+  "spec": "test/**/*.test.ts"
+}

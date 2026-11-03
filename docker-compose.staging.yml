@@ -1,0 +1,13 @@
+name: qgl-staging
+
+services:
+  app:
+    image: ${APP_IMAGE:?Set APP_IMAGE to the image to deploy}
+    ports:
+      - "3001:3000"
+    restart: unless-stopped
+    volumes:
+      - staging-data:/data
+
+volumes:
+  staging-data:
