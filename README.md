@@ -1,6 +1,7 @@
 # Post-merge: deploy to staging and smoke test (Jenkins)
 
-One flow only: **a merge to `main` is built into an image, deployed to staging, and verified.** Pull-request checks live in the sibling repos `qg-pr-open-e2e-playwright` (source) and `qg-pr-open-container-playwright` (container image).
+One flow only: **a merge to `main` is built into an image, deployed to staging, and verified.** 
+Pull-request checks live in the sibling repos `qg-pr-open-e2e-playwright` (source) and `qg-pr-open-container-playwright` (container image).
 
 ## Why this check exists
 
