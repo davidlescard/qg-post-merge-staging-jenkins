@@ -12,7 +12,6 @@ services:
       JENKINS_URL: ${JENKINS_URL:-http://localhost:8080/}
       GITHUB_USER: ${GITHUB_USER:?Copy .env.example to .env and set it}
       GITHUB_TOKEN: ${GITHUB_TOKEN:?Copy .env.example to .env and set it}
-      GHCR_TOKEN: ${GHCR_TOKEN:-}
     extra_hosts:
       - "host.docker.internal:host-gateway"
     volumes:
