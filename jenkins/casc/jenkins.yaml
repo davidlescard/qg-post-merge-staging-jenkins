@@ -26,12 +26,6 @@ credentials:
               description: "Read-only GitHub token for branch and pull request discovery"
               username: "${GITHUB_USER}"
               password: "${GITHUB_TOKEN}"
-          - usernamePassword:
-              scope: GLOBAL
-              id: "ghcr-token"
-              description: "Classic token with write:packages, used to push images to ghcr.io (optional)"
-              username: "${GITHUB_USER}"
-              password: "${GHCR_TOKEN:-}"
 
 jobs:
   - script: >
